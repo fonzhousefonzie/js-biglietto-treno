@@ -29,7 +29,7 @@ let finalPrice = price;
 
 // imposto le condizioni
 
-if (isNaN(eta) || isNaN(km)){ 
+if (isNaN(eta) || isNaN(km) || eta < 1){ 
     /* condizione che determina se i dati inseriti sono numeri, quindi validi o meno 
     (in caso di invalidità la pagina mostra un messaggio di errore e poi si ricarica automaticamente)*/
     alert("Valori non validi!");
