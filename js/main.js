@@ -50,6 +50,6 @@ if (isNaN(eta) || isNaN(km) || eta < 1){
 
 // stampa sul documento HTML
 
-document.getElementById("eta").innerHTML= eta;
-document.getElementById("km").innerHTML= km;
+document.getElementById("eta").innerHTML= eta.toString();
+document.getElementById("km").innerHTML= km.toString();
 document.getElementById("price").innerHTML= finalPrice.toFixed(2);
