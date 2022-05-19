@@ -22,10 +22,10 @@ posso inserire un minimo / massimo di km possibili?
 */
 
 // imposto le variabili che utilizzerò
-const eta = prompt('Quanti anni hai?');
-const km = prompt('Quanti chilometri devi percorrere?');
+const eta = parseInt(prompt('Quanti anni hai?'));
+const km = parseInt(prompt('Quanti chilometri devi percorrere?'));
 const price = km*0.21;
-let finalPrice
+let finalPrice = price;
 
 // imposto le condizioni
 
@@ -45,9 +45,7 @@ if (isNaN(eta) || isNaN(km)){
         finalPrice = (price*0.8);
     } else if (eta > 65){
         finalPrice = (price*0.6);
-    } else {
-        finalPrice = (price);
-    }
+    } 
 }
 
 // stampa sul documento HTML
